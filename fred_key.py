@@ -1,1 +1,1 @@
-fred_key = '95a1897ef9e150829d285a90ef78d304' 
+fred_key = 'blah' 
