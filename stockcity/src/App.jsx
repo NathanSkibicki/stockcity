@@ -20,7 +20,7 @@ function App() {
         }
         const data = await response.json()
         
-        // Convert string dates to Date objects
+        //Convert str to date obj
         const formattedData = {
           dates: data.dates.map(dateStr => new Date(dateStr)),
           values: data.values

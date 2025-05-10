@@ -34,7 +34,6 @@ def get_data():
     if response.status_code == 200:
         res_data = response.json()
         obs_data = pd.DataFrame(res_data['observations'])
-        # Convert dates and values to the format we need
         dates = obs_data['date'].tolist()
         values = [float(x) for x in obs_data['value'].tolist()]
         return jsonify({
